@@ -1,5 +1,9 @@
 # Movie Explorer
 
+## Link:
+
+https://movie-explo.netlify.app/
+
 A single-page application built with React, TypeScript, and Redux Observables that allows users to browse and search for movies, TV shows, and episodes using the OMDb API.
 
 ![Movie Explorer App Screenshot](screenshot.png)
