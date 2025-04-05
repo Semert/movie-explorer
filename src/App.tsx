@@ -9,7 +9,6 @@ import AppRoutes from "./routes";
 import store from "./redux/store";
 import "./styles/main.scss";
 
-// Custom theme
 const themeOptions: ThemeOptions = {
   palette: {
     primary: {

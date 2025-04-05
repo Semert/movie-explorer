@@ -5,7 +5,6 @@ import { rootEpic } from "./epics";
 
 const epicMiddleware = createEpicMiddleware();
 
-// Add Redux DevTools Extension support
 const composeEnhancers =
   (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

@@ -1,4 +1,3 @@
-// Updated FilterPanel.tsx
 import React from "react";
 import {
   FormControl,

@@ -16,10 +16,8 @@ export const formatDate = (dateString: string): string => {
 export const formatRuntime = (runtime: string): string => {
   if (!runtime || runtime === "N/A") return "N/A";
 
-  // If it's already in the format "XX min", just return it
   if (runtime.includes("min")) return runtime;
 
-  // If it's just a number, add "min" to it
   const minutes = parseInt(runtime, 10);
   if (!isNaN(minutes)) {
     return `${minutes} min`;
