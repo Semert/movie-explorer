@@ -28,12 +28,6 @@ A single-page application built with React, TypeScript, and Redux Observables th
 - **Axios**: API requests
 - **Lodash**: Utility functions
 
-## Prerequisites
-
-- Node.js (v14.0.0 or higher)
-- npm (v6.0.0 or higher)
-- OMDb API Key (get one at http://www.omdbapi.com/apikey.aspx)
-
 ## Getting Started
 
 ### Prerequisites
