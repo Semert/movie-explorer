@@ -76,7 +76,7 @@ const MovieItem: React.FC<MovieItemProps> = ({ movie }) => {
                     ? "secondary"
                     : "default"
               }
-              sx={{ marginLeft: 1 }} // Optional: Adds some space between the year and genre chip
+              sx={{ marginLeft: 1 }}
             />
           </Box>
           <Typography variant="caption" color="text.disabled">

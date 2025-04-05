@@ -1,4 +1,3 @@
-// src/components/common/LoadingSpinner/LoadingSpinner.tsx
 import React from "react";
 import { CircularProgress, Box } from "@mui/material";
 import styles from "./LoadingSpinner.module.scss";
