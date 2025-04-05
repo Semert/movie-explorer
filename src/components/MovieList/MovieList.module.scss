@@ -1,0 +1,118 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.movieListContainer {
+  margin-top: 0;
+}
+
+.searchBarContainer {
+  margin-bottom: $spacing-lg;
+  padding: $spacing-md;
+}
+
+.searchInput {
+  margin: 0;
+}
+
+.filterPanel {
+  margin-bottom: $spacing-lg;
+}
+
+.filterPanelContainer {
+  background-color: #f8f9fa;
+  border-radius: $border-radius-md;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  @include box-shadow(light);
+}
+
+.filterControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+
+  & > * {
+    flex: 1 1 calc(50% - #{$spacing-md});
+    min-width: 200px;
+
+    @media (max-width: $breakpoint-sm) {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+.movieItemContainer {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.resultsHeader {
+  margin-bottom: $spacing-lg;
+  padding: $spacing-md $spacing-lg;
+  @include flex(row, space-between, center);
+}
+
+.moviesGrid {
+  margin-bottom: $spacing-xl;
+}
+
+.movieCard {
+  height: 100%;
+  transition: transform $transition-normal;
+
+  &:hover {
+    transform: translateY(-5px);
+    @include box-shadow(medium);
+  }
+}
+
+.movieLink {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.moviePoster {
+  height: 300px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.movieTitle {
+  @include text-truncate;
+  margin-bottom: $spacing-xs;
+  height: 2.4em; // Limit to 2 lines
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.movieMeta {
+  @include flex(row, space-between, center);
+  margin-bottom: $spacing-xs;
+}
+
+.typeChip {
+  font-size: $font-size-xs;
+}
+
+.imdbId {
+  color: $text-light;
+  font-size: $font-size-xs;
+}
+
+.paginationContainer {
+  @include flex(row, center, center);
+  margin-top: $spacing-xl;
+  margin-bottom: $spacing-lg;
+}
+
+.errorAlert {
+  margin: $spacing-xl 0;
+}

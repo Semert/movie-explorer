@@ -1,0 +1,29 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: $spacing-xl 0;
+}
+
+a {
+  color: $primary-color;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}

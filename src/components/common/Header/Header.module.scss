@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.header {
+  background-color: white;
+  box-shadow: $shadow-light;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-weight: 700;
+  font-size: $font-size-lg;
+  text-decoration: none;
+  padding: $spacing-sm 0;
+
+  @include hover-transition {
+    color: darken($primary-color, 10%);
+  }
+}

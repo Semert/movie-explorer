@@ -1,0 +1,129 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  margin-top: -40px;
+  padding-bottom: 0;
+}
+
+.placeholderPoster {
+  height: 320px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #757575;
+  padding: $spacing-md;
+}
+
+.backButton {
+  margin-bottom: $spacing-xl !important;
+  margin-top: $spacing-md;
+  font-weight: 600;
+}
+
+.movieDetailPaper {
+  padding: $spacing-xl;
+  overflow: hidden;
+}
+
+.poster {
+  width: 100%;
+  border-radius: $border-radius-md;
+  @include box-shadow(light);
+
+  @include responsive(md) {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+}
+
+.title {
+  margin-bottom: $spacing-md;
+  font-weight: 700;
+}
+
+.yearRuntime {
+  @include flex(row, flex-start, center);
+  gap: $spacing-md;
+  margin-bottom: $spacing-md;
+}
+
+.ratedChip {
+  font-weight: 600;
+  margin-left: $spacing-md;
+}
+
+.genreContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-lg;
+}
+
+.genreChip {
+  background-color: #f0f0f0;
+}
+
+.ratingContainer {
+  @include flex(row, flex-start, center);
+  gap: $spacing-sm;
+  margin-bottom: $spacing-lg;
+}
+
+.starIcon {
+  color: #ffd700;
+}
+
+.rating {
+  font-weight: 600;
+}
+
+.votes {
+  color: $text-light;
+}
+
+.plotContainer {
+  margin-bottom: $spacing-lg;
+}
+
+.plot {
+  line-height: 1.7;
+}
+
+.divider {
+  margin: $spacing-lg 0;
+}
+
+.infoGrid {
+  margin-top: $spacing-lg;
+}
+
+.infoItem {
+  margin-bottom: $spacing-md;
+}
+
+.infoLabel {
+  font-weight: 600;
+  margin-bottom: $spacing-xs;
+}
+
+.infoValue {
+  line-height: 1.6;
+}
+
+.ratingItem {
+  @include flex(row, flex-start, center);
+  gap: $spacing-sm;
+  margin-bottom: $spacing-xs;
+}
+
+.ratingSource {
+  font-weight: 600;
+}
+
+.errorAlert {
+  margin-bottom: $spacing-lg;
+}

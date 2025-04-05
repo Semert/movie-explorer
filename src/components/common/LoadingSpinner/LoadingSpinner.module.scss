@@ -1,0 +1,9 @@
+// LoadingSpinner.module.scss
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.spinnerContainer {
+  width: 100%;
+  padding: $spacing-xl 0;
+  @include flex(row, center, center);
+}
