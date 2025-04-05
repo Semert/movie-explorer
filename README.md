@@ -72,8 +72,6 @@ The application will be available at http://localhost:3000.
 - `npm start` - Runs the app in development mode
 - `npm test` - Launches the test runner
 - `npm run build` - Builds the app for production to the `build` folder
-- `npm run lint` - Runs ESLint to check code quality
-- `npm run format` - Formats code using Prettier
 
 ### Building for Production
 
