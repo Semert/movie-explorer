@@ -18,6 +18,7 @@ A single-page application built with React, TypeScript, and Redux Observables th
   - Cast and crew information
   - IMDb ratings
   - Additional metadata
+- Unit Tests: Comprehensive test suite for components, reducers, and utilities
 
 ## Technology Stack
 
@@ -29,6 +30,7 @@ A single-page application built with React, TypeScript, and Redux Observables th
 - **Material UI**: UI components and styling system
 - **Axios**: API requests
 - **Lodash**: Utility functions
+- **Test**: Jest & Testing Library: Unit and integration testing
 
 ## Getting Started
 
@@ -105,10 +107,12 @@ movie-explorer/
 │   ├── redux/          # Redux state management
 │   ├── styles/         # Global styles and SCSS variables
 │   ├── utils/          # Utility functions
+│   ├── __tests__/      # Unit and integration tests
 │   ├── App.tsx         # Main application component
 │   ├── index.tsx       # Entry point
 │   └── routes.tsx      # Application routes
 ├── .env                # Environment variables
+├── jest.config.js      # Jest configuration
 ├── package.json        # Dependencies and scripts
 └── README.md           # Project documentation
 ```
